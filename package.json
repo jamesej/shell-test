@@ -4,7 +4,7 @@
   "description": "",
   "main": "build/server.js",
   "scripts": {
-    "test": "mocha -r ts-node/register app/**/*.spec.ts --timeout 3000",
+    "test": "mocha -r ts-node/register *.spec.ts --timeout 3000",
     "tsc": "tsc",
     "start": "node build/server.js"
   },
@@ -12,7 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "@types/mocha": "^5.2.7",
+    "@types/supertest": "^2.0.8",
+    "graphql-request": "^1.8.2",
     "mocha": "^6.2.2",
+    "supertest": "^4.0.2",
     "ts-node": "^8.3.0",
     "typescript": "^3.7.4"
   },
